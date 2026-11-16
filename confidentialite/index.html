@@ -22,7 +22,7 @@ footer{border-top:1px solid #d9e7e9;margin-top:42px;padding-top:22px;font-size:.
 <body><main>
 <nav><a href="../">← Dadou Suivi</a><span class="pill">Politique de confidentialité</span></nav>
 <h1>Comment sont utilisées tes données ?</h1>
-<p class="muted">Version française · Mise à jour : 16 novembre 2026.</p>
+<p class="muted">Version française · Mise à jour du projet : 17 novembre 2026. Version préparatoire pour validation de la diffusion publique.</p>
 <div class="notice"><strong>Portée de cette politique.</strong> Elle décrit l'édition gratuite de Dadou Suivi, sans compte en ligne et sans communauté, en préparation. Une version de test antérieure peut proposer d'autres fonctions ; elle n'est pas couverte par toutes les affirmations ci-dessous.</div>
 <h2>1. À quoi sert Dadou Suivi ?</h2>
 <p>Il s'agit d'un outil d'organisation et de suivi descriptif : rendez-vous, rappels de médicaments à des horaires choisis, journal de ressentis, préparation de consultation, bilans et profils familiaux. Il ne propose pas de diagnostic, de posologie ni de prescription.</p>
@@ -30,9 +30,9 @@ footer{border-top:1px solid #d9e7e9;margin-top:42px;padding-top:22px;font-size:.
 <p>Si tu le souhaites, tu peux saisir un pseudo ou un prénom (facultatif), des sujets de suivi (facultatifs), des rendez-vous, des notes, des horaires de médicaments, des prises cochées, des ressentis, des questions et des informations concernant les profils de ton entourage que tu gères. Ces informations peuvent relever de la santé.</p>
 <h2>3. Où restent ces informations ?</h2>
 <p>Dans cette édition, ces données de suivi sont enregistrées dans le stockage local de l'application sur ton appareil. Elles ne sont pas synchronisées vers un serveur Dadou. L'application n'impose ni compte en ligne ni authentification Google ou Apple. Aucun achat, abonnement ou service communautaire public n'est activé.</p>
-<p>Le stockage local n'est pas une garantie de chiffrement spécifique de chaque note. Il est recommandé de sécuriser le téléphone avec un code d'accès et de mettre son système à jour.</p>
+<p>Les informations personnelles sont actuellement conservées par un stockage local de type AsyncStorage, qui ne fournit pas lui-même un chiffrement applicatif des notes. Le verrouillage et la protection du téléphone sont recommandés. Un renforcement de la sécurité est à vérifier avant la diffusion publique, en particulier pour les informations de santé.</p>
 <h2>4. Sauvegardes du téléphone</h2>
-<p>Selon les paramètres iOS ou Android, les sauvegardes du système (par exemple iCloud ou le service de sauvegarde Android) peuvent inclure les données de l'application. Ces sauvegardes obéissent aux conditions et réglages du fournisseur du système. Supprimer les informations dans l'application ne supprime pas nécessairement leurs copies de sauvegarde.</p>
+<p>Selon le système, des sauvegardes de l'appareil peuvent contenir des informations de l'application. L'exclusion effective des notes de santé des sauvegardes iCloud n'a pas encore été démontrée sur la version iPhone ; nous ne la présentons donc pas comme acquise. Apple interdit aux applications de santé de stocker des informations médicales personnelles sur iCloud. Ce point doit être corrigé et vérifié techniquement avant une diffusion publique. Les fichiers exportés vers un service cloud à ton initiative en sont distincts. Supprimer les notes locales ne supprime pas nécessairement leurs copies dans des sauvegardes.</p>
 <h2>5. Notifications</h2>
 <p>Les rendez-vous et rappels de médicaments sont programmés localement, après autorisation de l'appareil si elle est nécessaire. Tu peux gérer les autorisations dans les réglages de ton téléphone.</p>
 <h2>6. Exports et partage</h2>
@@ -40,13 +40,13 @@ footer{border-top:1px solid #d9e7e9;margin-top:42px;padding-top:22px;font-size:.
 <h2>7. Liens extérieurs</h2>
 <p>Les liens vers les administrations et organismes officiels s'ouvrent à ta demande dans le navigateur. Ils ne reçoivent pas ton journal médical par ce lien. Les sites consultés appliquent leur propre politique de confidentialité.</p>
 <h2>8. Durée, accès et effacement</h2>
-<p>Tu peux consulter les informations depuis l'application, les exporter, ou effacer les données locales avec une confirmation explicite. Elles restent sur l'appareil jusqu'à l'effacement demandé, à la suppression de l'application ou à un événement affectant le stockage. Les fichiers exportés et les sauvegardes système doivent être gérés séparément.</p>
+<p>Tu peux consulter les informations depuis l'application, les exporter, ou effacer les données locales avec une confirmation explicite. Elles restent sur l'appareil jusqu'à l'effacement demandé, à la suppression de l'application ou à un événement affectant le stockage. Les fichiers exportés et les sauvegardes système doivent être gérés séparément. Les aperçus des notifications sur écran verrouillé se règlent dans les paramètres iOS.</p>
 <h2>9. Données d'une version antérieure</h2>
 <p>Si tu as utilisé une ancienne version avec un compte en ligne ou des témoignages communautaires, la suppression des notes locales de la nouvelle édition ne supprime pas automatiquement les informations éventuellement conservées sur les anciens serveurs. Pour demander des renseignements ou un effacement lié à ces anciens services, écris au contact ci-dessous.</p>
 <h2>10. Site web et hébergeur</h2>
 <p>Cette page est hébergée par <strong>GitHub Pages</strong>, un service de GitHub, Inc. Son hébergeur peut traiter certaines données techniques lors de la consultation du site (par exemple une adresse IP) selon ses pratiques et sa <a href="https://docs.github.com/fr/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">politique de confidentialité</a>. Cette page n'intègre aucun formulaire, script publicitaire ou outil d'analyse ajouté par Dadou Suivi.</p>
 <p><strong>Hébergement :</strong> GitHub, Inc. — 88 Colin P. Kelly Jr. St., San Francisco, CA 94107, États-Unis. Le site est publié sous un nom de projet ; le régime légal des mentions applicables à l'édition non professionnelle et les autres obligations d'information sont à apprécier selon la situation réelle de l'éditeur.</p>
 <h2>11. Questions et contact</h2>
-<p>Contact du projet Dadou Suivi : <a href="mailto:dadoudecrypte@gmail.com">dadoudecrypte@gmail.com</a>. Tu peux aussi consulter <a href="https://www.cnil.fr/" rel="noopener noreferrer">la CNIL</a> pour comprendre tes droits en matière de données personnelles.</p>
+<p>Contact du projet Dadou Suivi : <a href="mailto:dadoudecrypte@gmail.com">dadoudecrypte@gmail.com</a>. Pour des informations sur le responsable de traitements éventuels liés à des versions anciennes ou des demandes d'effacement des comptes précédents, écris à cette adresse. Tu peux aussi consulter <a href="https://www.cnil.fr/" rel="noopener noreferrer">la CNIL</a> pour comprendre tes droits en matière de données personnelles.</p><p>Le statut juridique de l'éditeur (professionnel ou non professionnel), les traitements techniques des SDK natifs et la déclaration App Privacy sont en cours de vérification avant publication générale.</p>
 <footer>Dadou Suivi · Édition gratuite et locale en préparation · <a href="../">Assistance et accueil</a></footer>
 </main></body></html>
